@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href="http://image.tianji.com/tjs/styles/base.css" />
+	<link rel="stylesheet" href="../css/tianjiCommentsSystem.css">
+
+	<style type="text/css">
+		body{ font-size: 12px; cursor: pointer;}
+	</style>
+
+
+	<script type="text/javascript" src="http://image.tianji.com/tjs/gallery/jquery-1.7.2.min.js"></script>
+
+	
+</head>
+<body>
+	
+	<div class="hot-sign-wrap">
+		<div class="auto-complete-wrap" id="auto-complete-wrap1" style="z-index:3">
+			<div class="ms-btn-component ms-btn-canhover"></div>
+			<div class="txt-box-component">
+				<input type="text" class="ms-txt-component" maxlength="10" name="" value="">
+			</div>
+			<input type="hidden" class="ms_checkInput" value="" name="industryCode_">
+		</div>
+		<div class="hotSign">
+			<span class="signList" code="101">公司位置</span><span class="signList" code="102">试用期</span>
+		</div>
+		
+	</div>
+
+
+	<div style='margin-top:200px;'></div>
+
+<!-- 
+	<div class="hot-sign-wrap">
+
+		<div class="auto-complete-wrap" id="auto-complete-wrap2" style="z-index:3">
+			<div class="ms-btn-component ms-btn-canhover"></div>
+			<div class="txt-box-component">
+				<input type="text" class="ms-txt-component" maxlength="10" name="" value="">
+			</div>
+			<input type="hidden" class="ms_checkInput" value="" name="industryCode_">
+		</div>
+
+		<div class="hotSign">
+			<span class="signList" code="101">公司位置</span><span class="signList" code="102">试用期</span>
+		</div>
+	</div> -->
+
+
+	<script type="text/javascript" src="../js/autoCompleteSign.js"></script>
+	<script type="text/javascript">
+
+	$("#auto-complete-wrap1").autoCompleteSign();
+
+	</script>
+
+	</script>
+</body>
+</html>

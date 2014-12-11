@@ -1,0 +1,136 @@
+
+/* body{font-size: 12px; color: #979797;}
+.clearfix{ zoom:1;}
+.clearfix:after{content:".";display:block;visibility:hidden;height:0;clear:both;}
+.left,.center,.l,.c,.right,.r{display:inline;float:left;}
+
+ */
+#tianjiCommentsSystem .cMphoto{}
+#tianjiCommentsSystem .cPhoto{}
+#tianjiCommentsSystem .cTextarea{}
+
+#tianjiCommentsSystem .cBlockbox{ width: 100%;}
+#tianjiCommentsSystem .cBlockhead{ height: 80px; width: 80px; float: left; text-align: center; }
+#tianjiCommentsSystem .headimg{}
+#tianjiCommentsSystem .postarea{/*  padding-left: 100px;  */}
+#tianjiCommentsSystem .wraparea{ padding-right: 5px;overflow: hidden;  *zoom:1; }
+#tianjiCommentsSystem .textareawrap{ overflow: hidden; *zoom:1; text-align: left; border: 2px solid #CCD4D9; }
+#tianjiCommentsSystem .postContent{ margin: 0px; padding: 0px; width: 100%; _width: 99%; height: 70px; display: inline;overflow-x:hidden;overflow-y:auto; resize:none; border: 0; outline: none;}
+#tianjiCommentsSystem .postBtn{ text-align: right; }
+#tianjiCommentsSystem .textareaDi { height: 30px; line-height: 30px; background: #F6F8F9; text-align: left;}
+
+#tianjiCommentsSystem .post-message{ word-wrap:break-word;}
+
+
+#tianjiCommentsSystem .cl_cBlockbox{ width: 100%;}
+#tianjiCommentsSystem .cl_cBlockhead{ height: 80px; width: 80px; float: left; text-align: center; }
+#tianjiCommentsSystem .cl_headimg{}
+#tianjiCommentsSystem .cl_postarea{ overflow: hidden; *zoom:1; text-align: left;}
+#tianjiCommentsSystem .cl_wraparea{ padding-right: 5px;overflow: hidden;  }
+
+
+
+.auto-complete-wrap{width: 350px;  border: 1px solid; border-color:#C6C6C6 #EEEEEE #EEE #C6C6C6; background-color: #F9F9F9;padding:4px 4px 0 4px;
+	text-align: left; position: relative; zoom:1; font-size: 12px;}
+
+.auto-complete-wrap ul,.auto-complete-wrap li{ margin: 0px; padding: 0px; list-style: none;}
+.auto-complete-wrap a{ color: #333; text-decoration: none;}
+.auto-complete-wrap a:hover{ color: #333;}
+.auto-complete-wrap:after{content:".";display:block;visibility:hidden;height:0;clear:both;}
+
+.auto-complete-wrap .ms-txt-component{ background:none; width: 50px; border: none; outline: none;}
+.auto-complete-wrap .txt-box-component{ position: relative; z-index: 2; padding: 4px 5px 0px 0px; margin-right: 15px; }
+.auto-complete-wrap .ms-wrap-component {
+	width:300px;
+	border:1px solid;
+	border-color:#C6C6C6 #EEEEEE #EEE #C6C6C6;
+	background:#F9F9F9;
+	padding:4px 4px 0 4px;
+	overflow:hidden;
+}
+
+.auto-complete-wrap .ms-btn-component {
+	position: absolute;
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	right: 8px; 
+	top: 8px;
+	background:url(http://image.tianji.com/tjs/tianjiCommentsSystem/images/mspick.gif ) -47px -60px no-repeat;
+	z-index: 111;
+}
+.auto-complete-wrap .ms-btn-component:hover {
+	background-position:-89px -60px;
+}
+
+.auto-complete-wrap .ms-txt-component {
+	border:none;
+	padding:0;
+	height:20px;
+	line-height:20px;
+	font-size:12px;
+	display:inline-block;
+	/* width:60px; */
+	width:100%;
+	margin:0 0 4px 5px;
+	white-space:nowrap;
+	word-wrap:normal;
+	background:transparent;
+	vertical-align:middle;
+	color: #999;
+	float: none;
+}
+.auto-complete-wrap .ms-txt-component:focus {
+	outline:none;
+}
+
+
+.auto-complete-wrap .ms-selected-item {
+	height:20px;
+	line-height:20px;
+	_line-height:normal;
+	display:inline-block;
+	white-space:nowrap;
+	background:transparent url(http://image.tianji.com/tjs/tianjiCommentsSystem/images/mspick.gif) no-repeat left top;
+	margin:0 5px 4px 2px;
+	padding-left:8px;
+	cursor:default;
+	font-size:12px;
+	vertical-align:middle;
+	text-decoration:none;
+	color:#1357A2;
+}
+.auto-complete-wrap .ms-selected-item .delete-component {
+	display:inline-block;
+	height:20px;
+	width:20px;
+	text-indent:-99999px;
+	margin-left:6px;
+	background:transparent url(http://image.tianji.com/tjs/tianjiCommentsSystem/images/mspick.gif) no-repeat right top;
+	cursor:pointer;
+}
+.auto-complete-wrap .ms-selected-item:hover {
+	background-position:left -20px;
+	text-decoration:none;
+	color:#333;
+}
+.auto-complete-wrap .ms-selected-item:hover .delete-component {
+	background-position:right -20px;
+}
+.auto-complete-wrap .ms-disabled .ms-selected-item:hover {
+	background-position:left top;
+	text-decoration:none;
+	color:#1357A2;
+}
+.auto-complete-wrap .ms-disabled .ms-selected-item:hover .delete-component {
+	background-position:right top;
+	cursor:default;
+}
+
+.autoC-error-component{width: 200px; height: 28px; line-height: 28px; color: #999; border: 1px solid #ccc; text-align: left; background: #f6f6f6; position: absolute;z-index: 101; font-size: 12px; z-index: 10008; padding-left: 10px; overflow: hidden;}
+.autoC-ok-component{background: #daeaf2; border: 1px solid #ccc; position: absolute; width: 150px; z-index: 10008;}
+.autoC-ok-component .autoC-list-component li{height: 28px; line-height: 28px; padding-left: 8px;  border-bottom: 1px solid #daeaf2; background: #fff;}
+.autoC-ok-component .autoC-list-component li.active{background: #daeaf2}
+.autoC-ok-component ul, .autoC-ok-component li{margin: 0px;  padding: 0px; list-style: none; text-align: left; font-size: 12px;}
+.autoC-ok-component ul a{ color: #333; text-decoration: none;}
+.autoC-ok-component ul a:hover{ color: #333;}

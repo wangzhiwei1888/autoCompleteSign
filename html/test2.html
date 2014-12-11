@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href="http://image.tianji.com/tjs/styles/base.css" />
+	<link rel="stylesheet" href="../css/tianjiCommentsSystem.css">
+
+	<style type="text/css">
+		body{ font-size: 12px; cursor: pointer; padding-bottom: 500px;}
+	</style>
+
+
+	<script type="text/javascript" src="http://image.tianji.com/tjs/gallery/jquery-1.7.2.min.js"></script>
+
+</head>
+<body>
+	
+	<div class="hot-sign-wrap" id="hot-sign-wrap1">
+		
+	</div>
+
+
+	<div style='margin-top:200px;'></div>
+
+	<div class="hot-sign-wrap" id="hot-sign-wrap2">
+
+	</div>
+
+	<div style='margin-top:200px;'></div>
+	
+	<div class="">
+		<span code="111">测试</span><span code="112">好远</span>
+		<a href="javascript:;" class="edit">编辑</a>
+	</div>
+	
+	<div style='margin-top:200px;'></div>
+	
+	<div class="">
+		<a href="javascript:;" class="add">添加</a>
+	</div>
+
+
+	
+
+<script type="text/javascript" src="../js/autoCompleteSign2.js"></script>
+
+<script type="text/javascript">
+
+	//$("#auto-complete-wrap1").autoCompleteSign();
+	$("#hot-sign-wrap1").autoCompleteSign({
+		hotSigns:[{
+			code:101,
+			name:'公司位置1'
+		},{
+			code:102,
+			name:'试用期1'
+		}]
+	});
+
+
+	$("#hot-sign-wrap2").autoCompleteSign({
+		hotSigns:[{
+			code:101,
+			name:'公司位置2'
+		},{
+			code:102,
+			name:'试用期2'
+		}]
+	});
+
+
+	$('.edit').on('click',function(){
+
+		var str = '<div class="hot-sign-wrap" id="hot-sign-wrap3"></div>';
+
+		$('body').append(str);
+
+		var hotSigns = [{
+				code:101,
+				name:'公司位置1'
+			},{
+				code:102,
+				name:'试用期1'
+		}];
+
+		var init = [];
+
+		$(this).parent().find('span').each(function(){
+
+			var code = $(this).attr('code');
+			var name = $(this).html();
+
+			init.push({code:code,name:name});
+
+		})
+
+
+		$("#hot-sign-wrap3").autoCompleteSign({
+			hotSigns:hotSigns,
+			init:init
+		});
+
+	})
+
+
+
+	$('.add').on('click',function(){
+
+		var str = '<div class="hot-sign-wrap" id="hot-sign-wrap4"></div>';
+
+		$('body').append(str);
+
+		/*var hotSigns = [{
+				code:101,
+				name:'公司位置1'
+			},{
+				code:102,
+				name:'试用期1'
+		}];*/
+
+		//var init = [];
+		$("#hot-sign-wrap4").autoCompleteSign({
+			//hotSigns:hotSigns//,
+			//init:init
+		});
+
+	})
+
+
+
+
+</script>
+
+
+</body>
+</html>

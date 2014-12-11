@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<input type="text" class="test"  style="font-size:12px;" maxlength="10" />
+
+	<script type="text/javascript" src="http://image.tianji.com/tjs/gallery/jquery-1.7.2.min.js"></script>
+
+	<script type="text/javascript">
+
+	function textAutoWith(){
+
+		var id = 'span'+Math.ceil(Math.random()*1000000);
+		var str = '<span id="'+id+'" style="font-size:12px; position:absolute; left:-1500px; top:-1500px;"></span>';
+
+		$('body').append(str);
+
+		$(".test").on('keyup',function(){
+
+			
+			$("#"+id).html($(this).val());
+
+			var w = $("#"+id).width();
+
+			/*
+			if(w>80) w=80;
+			if(w<30) w=30;
+			*/
+			$(this).width(w);
+
+		})
+	}
+
+	textAutoWith()
+	
+
+	</script>
+</body>
+</html>
